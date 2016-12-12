@@ -4,10 +4,10 @@
             [org.httpkit.client :as http]))
 
 (def quote-service-url
-  (utils/config "QUOTE_SERVICE_URL" "http://10.128.0.3:8080"))
+  (utils/config "QUOTE_SERVICE_URL" "http://localhost:8085"))
 
 (def newsfeed-service-url
-  (utils/config "NEWSFEED_SERVICE_URL" "http://10.128.0.2:8080"))
+  (utils/config "NEWSFEED_SERVICE_URL" "http://localhost:8090"))
 
 (def newsfeed-token
   (utils/config "NEWSFEED_SERVICE_TOKEN" "T1&eWbYXNWG1w1^YGKDPxAWJ@^et^&kX"))
