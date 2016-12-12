@@ -20,5 +20,5 @@
 (defn -main []
   (let [port (Integer/parseInt (utils/config "APP_PORT" "8085"))]
     (log/info "Running quotes on port" port)
-    (run-server (var app) {:ip "127.0.0.1"
+    (run-server (var app) {:ip "0.0.0.0"
                            :port port})))
