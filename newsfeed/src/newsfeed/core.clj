@@ -37,7 +37,7 @@
       wrap-reload))
 
 (defn -main []
-  (let [port (Integer/parseInt (utils/config "APP_PORT" "8080"))]
+  (let [port (Integer/parseInt (utils/config "APP_PORT" "8090"))]
     (log/info "Running newsfeed on port" port)
-    (run-server (var app) {:ip "0.0.0.0"
+    (run-server (var app) {:ip "127.0.0.1"
                            :port port})))
